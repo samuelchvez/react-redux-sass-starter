@@ -35,12 +35,15 @@
     "style-loader": "^0.13.1",
     "uuid-v4": "^0.1.0",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "weed": "git+https://github.com/nahualventure/weed.git"
   },
   "devDependencies": {
     "babel-jest": "^18.0.0",
     "enzyme": "^2.7.1",
-    "jest": "^18.1.0"
+    "jest": "^18.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3"
   },
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",

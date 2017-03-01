@@ -10,6 +10,16 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : 'cheap-module-source-map',
   entry: ["./scripts/client.js", './index.html',],
   module: {
+    // rules: [
+    //   {
+    //     test: /\.less$/i,
+    //     use: [
+    //       'style-loader',
+    //       { loader: 'css-loader', options: { importLoaders: 1 } },
+    //       'less-loader'
+    //     ]
+    //   }
+    // ],
     loaders: [
       {
         test: /\.jsx?$/,
@@ -27,6 +37,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html-loader"
+      },
+      {
+        test: /\.less$/,
+        loader: "style!css!less"
       }
     ]
   },
