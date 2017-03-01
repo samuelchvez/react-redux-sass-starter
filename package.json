@@ -48,6 +48,7 @@
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
     "build": "NODE_ENV=production webpack --colors",
+    "watch": "NODE_ENV=production webpack --watch --colors",
     "test": "jest",
     "test:watch": "npm test -- --watch"
   },

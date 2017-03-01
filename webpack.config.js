@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loader: "style!css!less"
+        loader: extractSass.extract(['css', 'less'])
       }
     ]
   },
